@@ -1,17 +1,54 @@
 # machine_learning_project-unsupervised-learning
 
-## Project Outcomes
-- Unsupervised Learning: perform unsupervised learning techniques on a wholesale data dataset. The project involves four main parts: exploratory data analysis and pre-processing, KMeans clustering, hierarchical clustering, and PCA.
-### Duration:
-Approximately 1 hour and 40 minutes
-### Project Description:
-In this project, we will apply unsupervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Unsupervised Learning: Wholesale Customers Analysis
 
-The data set for this project is the "Wholesale Data" dataset containing information about various products sold by a grocery store.
-The project will involve the following tasks:
+This project applies unsupervised learning techniques to a real-world dataset from a wholesale distributor. The goal is to uncover natural groupings in customer purchasing behavior to inform better marketing, inventory, or customer segmentation strategies.
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Unsupervised learning: We will use the Wholesale Data dataset to perform k-means clustering, hierarchical clustering, and principal component analysis (PCA) to identify patterns and group similar data points together. We will determine the optimal number of clusters and communicate the insights gained through data visualization.
+## 📊 Dataset Overview
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+The dataset includes annual spending on six product categories by clients:
+
+- Fresh
+- Milk
+- Grocery
+- Frozen
+- Detergents_Paper
+- Delicatessen
+
+Each row represents a customer, and columns contain product expenditures.
+
+## Project Objectives
+
+- Clean and preprocess the data
+- Apply **K-Means Clustering** and **Hierarchical Clustering** to segment the data
+- Use **PCA** (Principal Component Analysis) for dimensionality reduction and better visualization
+- Derive insights from the clusters to support data-driven decisions
+
+## Key Techniques Used
+
+- **Exploratory Data Analysis (EDA)** using pandas, seaborn, and matplotlib
+- **KMeans Clustering** with elbow method and silhouette score for choosing optimal `k`
+- **Hierarchical Clustering** with dendrograms and Agglomerative Clustering
+- **PCA** to reduce dimensionality while preserving variance
+- **Cluster profiling** to interpret each segment
+
+## 📌 Key Findings
+
+- PCA revealed that the first two principal components explained over **58% of the variance** in the data.
+- **KMeans Clustering** identified **five meaningful customer segments** based on purchasing patterns.
+- Cluster profiles highlighted clear differences in customer preferences, such as bulk buyers of fresh items vs those with high detergent and grocery purchases.
+- These insights can be used to **target marketing efforts** or customize product bundles.
+
+## 🗂️ Repository Contents
+
+- `Unsupervised Learning - Project.ipynb`: Complete project notebook
+- `Wholesale_Data.csv`: Raw dataset
+- `README.md`: This file
+
+## ✅ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ikenna1414/ml-project-unsupervised-learning.git
+
 
